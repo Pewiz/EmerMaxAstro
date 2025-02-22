@@ -1,7 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import NavBar from '../components/navbar/Navbar.jsx';
+import SwiperSlider from '../components/Carrousel.jsx';
 ---
 
-<Layout>
-	<h1>EmerMax</h1>
+<Layout title="EmerMax">
+	<NavBar client:visible/>
+	<SwiperSlider client:visible></SwiperSlider>
 </Layout>
