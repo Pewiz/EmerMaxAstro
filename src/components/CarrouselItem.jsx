@@ -2,7 +2,7 @@ import {Card, CardHeader, CardFooter, Image, Button} from "@heroui/react";
 
 export default function CarrouselItem({title, topTitle, description, url_img}) {
   return (
-      <Card radius="none" className="h-[580px]">
+      <Card radius="none" className="h-[700px]">
         <CardHeader className="absolute z-10 top-5 left-5 flex-col !items-start !h-full pr-5 justify-center">
           <p className="text-tiny text-white/60 uppercase font-bold">{topTitle}</p>
           <h4 className="text-white font-medium text-4xl">{title}</h4>

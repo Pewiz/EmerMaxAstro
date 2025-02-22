@@ -20,6 +20,7 @@ import {
 
 import { ChevronDown, EmerLogo, SearchIcon } from "./IconsNavbar";
 import { IconHeartbeat, IconMilitaryRank, IconHeartCheck, IconBandage, IconFirstAidKit, IconLungs, IconHeartRateMonitor, IconShieldPlus, IconForklift } from '@tabler/icons-react'
+import Cart from "./Cart.jsx";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -42,7 +43,7 @@ export default function App() {
 
   return (
     <Navbar
-      className=" dark navbar colorNavbar"
+      className="dark navbar colorNavbar"
       height={"6rem"}
       maxWidth="2xl"
       onMenuOpenChange={setIsMenuOpen}
@@ -71,7 +72,7 @@ export default function App() {
             Nosotros
           </Link>
         </NavbarItem>
-        <Dropdown>
+        <Dropdown className="dark backdrop-blur-xl colorNavbar text-white">
           <NavbarItem>
             <DropdownTrigger>
               <Button
@@ -142,7 +143,7 @@ export default function App() {
             </DropdownSection>
           </DropdownMenu>
         </Dropdown>
-        <Dropdown>
+        <Dropdown className="dark backdrop-blur-xl colorNavbar text-white">
           <NavbarItem>
             <DropdownTrigger>
               <Button
@@ -207,6 +208,9 @@ export default function App() {
           <Button as={Link} color="primary" href="#" variant="flat">
             Iniciar Sesion
           </Button>
+        </NavbarItem>
+        <NavbarItem className="lg:gap-20 ">
+          <Cart></Cart>
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
